@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'tweets#index'                        #ツイート一覧画面
   post  'tweets/new'  =>  'tweets#new'       #ツイート投稿画面
   post  'tweets'      =>  'tweets#create'    #ツイート投稿機能
-  get   'users/:user_id'   =>  'users#show'       #マイページ画面
+  get   'users/:user_id'   =>  'users#show'  #マイページ画面
   delete 'tweets/:id' =>  'tweets#destroy'   #ツイート削除機能
   get   'tweets/:id/edit'  =>  'tweets#edit' #ツイート編集画面
   patch 'tweets/:id'   =>  'tweets#update'   #ツイート更新機能
